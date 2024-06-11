@@ -4,7 +4,7 @@ function love.load()
     package.cpath = string.format("%s%s/?.%s", package.cpath, love.filesystem.getSourceBaseDirectory(),"so")
     package.cpath = string.format("%s;%s/?.%s;", package.cpath, love.filesystem.getSourceBaseDirectory(), "dylib")
 
-    print(package.cpath)
+    print("cpath: "..package.cpath)
 
     require("luasteam")
 end
